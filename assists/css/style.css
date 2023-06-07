@@ -1,0 +1,237 @@
+/*Common css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*,::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h1, h2, h3 ,h4, h5, h6{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+section{
+    padding: 100px;
+}
+
+header{
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+
+}
+
+.inner_header{
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.inner_header .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+    margin-top: 3px;
+}
+.inner_header .logo img{
+    width: 100%;
+}
+.nav_bar{
+}
+.nav_bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.nav_bar ul li{
+    margin-left: 6px;
+}
+.nav_bar ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #013289;
+    transition: 0.3s;
+    column-gap: 5px;
+
+}
+
+.nav_bar ul li a.common_btn{
+    background: #4154f1;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+.toggle_btn{
+    display: none;
+}
+
+
+/*banner style */
+#banner {
+    background-image: url("https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#banner .container {
+    min-height: calc(100vh - 74px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner .container .banner_contemt {}
+#banner .container .banner_contemt h1 {
+    margin: 0;
+    font-size: 68px;
+    font-weight: 700;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+}
+#banner .container .banner_contemt p {
+    color: #444444;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+    font-family: "Nunito", sans-serif;
+}
+#banner .container .banner_btn_content a.common_btn {
+}
+
+#banner .container .banner_image {}
+#banner .container .banner_image img {
+    width: 100%;
+}
+
+#about{}
+
+#about .container{
+}
+
+#about .container .inner_about{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#about .container .inner_about .about_content{
+    background-color: #f6f9ff;
+    max-width: 660px;
+    width: 100%;
+    padding: 40px;
+    flex-basis: 50%;
+}
+
+#about .container .inner_about .about_content h6{
+    font-size: 15px;
+    font-weight: 700;
+    color: #4154f1;
+}
+#about .container .inner_about .about_content h4{
+    font-size: 27px;
+    padding-top: 14px;
+}
+#about .container .inner_about .about_content p{
+    padding-top: 17px;
+}
+
+#about .container .inner_about .about_content a.common_btn{
+
+}
+#about .container .inner_about .about_content_img{
+    flex-basis: 50%;
+}
+
+#about .container .inner_about .about_content_img img{
+    width: 100%;
+}
+
+.section_mini_title{
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section_title{
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #012970;
+    text-align: center;
+}
+.value_box_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    column-gap: 2%;
+}
+.value_box{
+    padding: 30px;
+    box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+    text-align: center;
+    transition: 0.3s;
+   flex-basis: 32%;
+}
+
+.value_box .img_container{
+    width: 100%;
+    min-height: 300px;
+}
+.value_box .img_container img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.value_box:hover .img_container img{
+    transform: scale(0.9);
+}
+.value_box h4{
+    font-size: 24px;
+    color: #012970;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.value_box p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
